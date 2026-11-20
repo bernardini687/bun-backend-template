@@ -1,0 +1,30 @@
+{
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "import", "promise"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error"
+  },
+  "options": {
+    "typeAware": true,
+    "typeCheck": true,
+    "reportUnusedDisableDirectives": "error"
+  },
+  "rules": {
+    "typescript/return-await": ["error", "always"],
+    "typescript/no-unnecessary-condition": "error",
+    "typescript/no-explicit-any": "error",
+    "typescript/no-non-null-assertion": "error",
+    "typescript/consistent-type-imports": "error",
+    "eslint/no-empty": "error",
+    "import/no-cycle": "error",
+    "eslint/no-unused-vars": "off",
+    "promise/always-return": "off",
+    "typescript/prefer-readonly-parameter-types": "off",
+    "eslint/no-inline-comments": "off",
+    "eslint/max-lines-per-function": "off",
+    "eslint/max-lines": "off",
+    "eslint/no-await-in-loop": "off"
+  }
+}

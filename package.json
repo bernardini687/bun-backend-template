@@ -1,0 +1,19 @@
+{
+  "name": "bun-backend-template",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.5",
+  "scripts": {
+    "dev": "bun src/index.ts",
+    "check": "bun fmt --check && oxlint && knip && bun test"
+  },
+  "bun-create": {
+    "postinstall": "bun update"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "knip": "^6.47.0",
+    "oxlint": "^1.94.0",
+    "oxlint-tsgolint": "^7.0.2007"
+  }
+}
